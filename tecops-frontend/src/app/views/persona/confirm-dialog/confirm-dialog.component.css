@@ -1,0 +1,39 @@
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: white;
+  }
+  
+  .card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-block {
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  button {
+    border-radius: 5px; /* Sin bordes punteagudos */
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-yes {
+    background-color: #f44336; /* Color rojo para eliminar */
+    color: white;
+  }
+  
+  .btn-no {
+    background-color: #2196F3; /* Color azul para cancelar */
+    color: white;
+  }
+  
