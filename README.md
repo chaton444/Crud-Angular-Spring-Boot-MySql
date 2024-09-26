@@ -1,4 +1,4 @@
-# ✨CRUD Basico con Angular con Spring Boot y MySQL ✨
+# ✨CRUD Angular con Spring Boot y MySQL ✨
 
 Este proyecto es un **CRUD** (Crear, Leer, Actualizar y Eliminar) que utiliza **Angular** para el frontend y **Spring Boot** con **MySQL** para el backend. A continuación, se detallan las características y funcionalidades del proyecto.
 
