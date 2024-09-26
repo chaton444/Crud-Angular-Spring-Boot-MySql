@@ -50,4 +50,30 @@ button {
     width: 100%;
   }
   
-  
+  /* Estilo general del contenedor */
+.search-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para el campo de búsqueda */
+mat-form-field {
+  width: 100%; /* Toma el ancho completo */
+  max-width: 600px; /* Limita el ancho máximo */
+  background-color: #217ccc; /* Color de fondo */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Estilo para el input */
+input[matInput] {
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo del placeholder */
+::placeholder {
+  color: #fcfcfc; /* Color del placeholder */
+ 
+}

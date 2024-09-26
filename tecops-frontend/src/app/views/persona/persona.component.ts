@@ -11,6 +11,7 @@ import { MatFormField } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort, MatSortModule } from '@angular/material/sort';
 
 
 @Component({
@@ -22,7 +23,8 @@ import { MatPaginator } from '@angular/material/paginator';
     MatFormField,
     MatInput,
     MatTableModule,
-    MatPaginator
+    MatPaginator,
+    MatSortModule,
   ],
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css']
@@ -32,6 +34,7 @@ export class PersonaComponent implements OnInit {
   dataSource: MatTableDataSource<Persona> = new MatTableDataSource();
   displayedColumns = ['idPersona', 'nombres', 'apellidos', 'edad', 'pais', 'acciones'];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
 
 
   constructor(
@@ -39,16 +42,18 @@ export class PersonaComponent implements OnInit {
     private personaService: PersonaService
   ) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {// este metodo hace reactiva la pagina para que se actualice en tiempo real
     this.personaService.listar().subscribe(data => {
       this.dataSource = new MatTableDataSource(data);
       console.log("Datos originales:", this.dataSource.data); // Verifica que los datos se carguen correctamente
       this.dataSource.paginator=this.paginator;
+      this.dataSource.sort=this.sort;
     });
 
     this.personaService.personaActualizar.subscribe(data => {
       this.dataSource = new MatTableDataSource(data);
       this.dataSource.paginator=this.paginator;
+      this.dataSource.sort=this.sort;
     });
   }
 
