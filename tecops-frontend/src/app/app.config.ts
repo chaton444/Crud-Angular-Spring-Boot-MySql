@@ -9,6 +9,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule}from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -22,6 +24,7 @@ export const appConfig: ApplicationConfig = {
     MatSelectModule,
     FormsModule,
     MatInputModule,
-    
+    HTMLInputElement,
+    MatPaginatorModule,
   ]
 };

@@ -1,5 +1,5 @@
 table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 1em;
@@ -44,6 +44,10 @@ button {
   
   .btn-delete:hover {
     background-color: #c82333;
+  }
+  .mat-form-field{
+    font-size: 14px;
+    width: 100%;
   }
   
   
