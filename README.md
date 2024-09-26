@@ -1,13 +1,17 @@
-﻿# Crud-Angular-Spreenboot-MySql
-Este proyecto es una aplicación CRUD (Create, Read, Update, Delete) desarrollada utilizando Angular para el frontend y Spring Boot para el backend, con una base de datos MySQL para el almacenamiento de información.
+#CRUD Angular con Spring Boot y MySQL
+Este proyecto es una aplicación de tipo CRUD (Create, Read, Update, Delete) que combina Angular en el frontend, Spring Boot en el backend, y MySQL como base de datos. Permite gestionar entidades a través de operaciones básicas, proporcionando una solución completa para manejar datos de manera eficiente.
 
-El frontend, implementado en Angular, proporciona una interfaz de usuario interactiva y dinámica, permitiendo gestionar los datos de manera sencilla. El backend, construido con Spring Boot, expone una API REST que se comunica con la base de datos MySQL para realizar operaciones de alta, lectura, actualización y eliminación de datos.
-
-Características principales:
-
-Gestión completa de datos mediante operaciones CRUD.
-Interfaz de usuario moderna y fácil de usar en Angular.
-Backend robusto y escalable con Spring Boot.
-Persistencia de datos utilizando MySQL.
-Comunicación entre frontend y backend a través de servicios HTTP.
-Este proyecto es ideal para aprender sobre el desarrollo de aplicaciones web full-stack utilizando tecnologías populares como Angular, Spring Boot y MySQL.
+Características
+*Frontend: Desarrollado en Angular, ofrece una interfaz de usuario moderna e intuitiva para la gestión de datos.
+*Backend: Implementado con Spring Boot, proporciona una API REST para interactuar con la base de datos.
+*Base de datos: MySQL para el almacenamiento persistente de la información.
+*Operaciones CRUD: Crear, Leer, Actualizar y Eliminar datos a través de una comunicación entre frontend y backend.
+*Arquitectura modular: Separación del frontend (Angular) y backend (Spring Boot) en diferentes carpetas dentro del mismo proyecto.
+#Estructura del Proyecto
++tecops-frontend: Carpeta que contiene el código del frontend desarrollado en Angular.
++tecops-backend: Carpeta que contiene el backend con Spring Boot.
+#Instalación y Configuración
+Requisitos
++Node.js y npm para ejecutar Angular.
++Java JDK 11 o superior para Spring Boot.
++MySQL para la base de datos (Workbench).
